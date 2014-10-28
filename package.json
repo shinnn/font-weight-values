@@ -1,0 +1,54 @@
+{
+  "name": "font-weight-values",
+  "version": "1.0.0",
+  "description": "Valid values of CSS font-weight property",
+  "main": "./font-weight-values-cjs.js",
+  "files": [
+    "font-weight-values-cjs.js",
+    "LICENSE"
+  ],
+  "scripts": {
+    "lint": "eslint *.js & jscs *.js",
+    "test": "eslint *.js && jscs *.js && node test.js"
+  },
+  "author": {
+    "name": "Shinnosuke Watanabe",
+    "email": "snnskwtnb@gmail.com",
+    "url": "https://github.com/shinnn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shinnn/font-weight-values.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shinnn/font-weight-values/issues"
+  },
+  "homepage": "https://github.com/shinnn/font-weight-values",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/shinnn/font-weight-values/blob/master/LICENSE"
+    }
+  ],
+  "keywords": [
+    "css",
+    "value",
+    "property",
+    "array",
+    "weight",
+    "font",
+    "font-weight",
+    "normal",
+    "bold",
+    "bolder",
+    "lighter",
+    "keyword",
+    "browser",
+    "client-side"
+  ],
+  "devDependencies": {
+    "eslint": "^0.9.1",
+    "jscs": "^1.7.3",
+    "tape": "^3.0.1"
+  }
+}
