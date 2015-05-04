@@ -16,7 +16,7 @@
     "lighter",
     "keyword"
   ],
-  "main": "./font-weight-values.js",
+  "main": "browser.js",
   "homepage": "https://github.com/shinnn/font-weight-values",
   "repository": {
     "type": "git",
@@ -31,10 +31,8 @@
   "license": "MIT",
   "ignore": [
     "**/.*",
-    "node_modules",
-    "font-weight-values-cjs.js",
-    "test.js",
-    "package.json",
-    "component.json"
+    "*.js",
+    "*.json",
+    "node_modules"
   ]
 }

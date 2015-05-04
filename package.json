@@ -2,31 +2,22 @@
   "name": "font-weight-values",
   "version": "1.0.0",
   "description": "Valid values of CSS font-weight property",
-  "main": "./font-weight-values-cjs.js",
   "files": [
-    "font-weight-values-cjs.js",
-    "LICENSE"
+    "index.json"
   ],
   "scripts": {
-    "lint": "eslint *.js & jscs *.js",
-    "test": "eslint *.js && jscs *.js && node test.js"
+    "pretest": "eslint --config node_modules/@shinnn/eslintrc/rc.json browser.js test.js",
+    "test": "node --harmony_arrow_functions test.js"
   },
   "author": {
     "name": "Shinnosuke Watanabe",
     "email": "snnskwtnb@gmail.com",
     "url": "https://github.com/shinnn"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/shinnn/font-weight-values.git"
-  },
-  "bugs": {
-    "url": "https://github.com/shinnn/font-weight-values/issues"
-  },
-  "homepage": "https://github.com/shinnn/font-weight-values",
+  "repository": "shinnn/font-weight-values",
   "licenses": [
     {
-      "type": "MIT",
+      "type": "Unlicense",
       "url": "https://github.com/shinnn/font-weight-values/blob/master/LICENSE"
     }
   ],
@@ -47,8 +38,8 @@
     "client-side"
   ],
   "devDependencies": {
-    "eslint": "^0.9.1",
-    "jscs": "^1.7.3",
-    "tape": "^3.0.1"
+    "@shinnn/eslintrc": "^1.0.0",
+    "eslint": "^0.20.0",
+    "tape": "^4.0.0"
   }
 }
