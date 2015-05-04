@@ -1,13 +1,9 @@
-/*!
- * font-weight-values | MIT (c) Shinnosuke Watanabe
- * https://github.com/shinnn/font-weight-values
-*/
 'use strict';
 
-var test = require('tape');
+const test = require('tape');
 
-var spec = 'should be an equivalent of the expected value.';
-var expected = [
+const spec = 'should be an equivalent of the expected value.';
+const expected = [
   'normal',
   'bold',
   'bolder',
@@ -23,16 +19,16 @@ var expected = [
   '900'
 ];
 
-test('require(\'font-weight-values\')', function(t) {
+test('require(\'font-weight-values\')', t => {
   t.plan(1);
 
   t.deepEqual(require('./'), expected, spec);
 });
 
-test('window.fontWeightValues', function(t) {
+test('window.fontWeightValues', t => {
   t.plan(1);
 
   global.window = {};
-  require(require('./bower.json').main);
+  require('./' + require('./bower.json').main);
   t.deepEqual(window.fontWeightValues, expected, spec);
 });
