@@ -45,6 +45,4 @@ Type: `Array` of `String`
 
 ## License
 
-Copyright (c) 2014 [Shinnosuke Watanabe](https://github.com/shinnn)
-
-Licensed under [the MIT License](./LICENSE).
+[The Unlicense](./LICENSE)
