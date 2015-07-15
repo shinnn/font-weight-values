@@ -1,8 +1,9 @@
 sudo: false
 git:
   depth: 2
+branches:
+  except: /^v\d/
 language: node_js
-node_js:
-  - iojs
+node_js: iojs
 notifications:
   email: false
